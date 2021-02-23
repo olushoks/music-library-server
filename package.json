@@ -1,0 +1,24 @@
+{
+  "name": "music-library-server",
+  "version": "1.0.0",
+  "description": "Back-End API Server using Node.js and Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olushoks/music-library-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olushoks/music-library-server/issues"
+  },
+  "homepage": "https://github.com/olushoks/music-library-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
