@@ -21,7 +21,7 @@ app.get("/api/songs/get", (req, res) => {
 });
 
 // REQUEST SPECIFIIC SONG IN DATABASE
-app.get("/api/songs/:id", (req, res) => {
+app.get("/api/songs/get/:id", (req, res) => {
   const id = req.params.id;
   const song = repoContext.songs.findSongById(id);
   res.send(song);
