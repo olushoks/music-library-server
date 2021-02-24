@@ -14,10 +14,13 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`));
 
-app.get("/", (req, res) => {
-  res.send("<h1>Hello World, I am express</h1>");
+// REQUEST ALL SONGS IN DATABASE
+app.get("/api/songs", (req, res) => {
+  const songs = repoContext.songs.findAllSongs();
+  res.send(songs);
 });
 
+// ADD NEW SONGS TO DATABASE
 app.post("/api/songs", [validateNewSong], (req, res) => {
   const songToAdd = req.body;
   const newSong = repoContext.songs.createSong(songToAdd);
