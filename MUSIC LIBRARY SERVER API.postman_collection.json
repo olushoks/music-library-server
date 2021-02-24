@@ -1,0 +1,633 @@
+{
+	"info": {
+		"_postman_id": "5482fa51-679e-49ab-9418-b0c13cd6bdfb",
+		"name": "MUSIC LIBRARY SERVER API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MIDDLEWARE TEST",
+			"item": [
+				{
+					"name": "POST-TEST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Today Was Yesterday's Tomorrow\",\n    \"album\": \"Phantom Phantasy\",\n    \"artist\": \"OluShoks\",\n    \"genre\": \"Universal\",\n    \"releaseDate\": 10192088\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/songs/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"songs",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST-TEST-RESPONSE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Today Was Yesterday's Tomorrow\",\n    \"album\": \"Phantom Phantasy\",\n    \"artist\": \"OluShoks\",\n    \"genre\": \"Universal\",\n    \"releaseDate\": 10192088\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/songs/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"songs",
+										"add"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-eiwV8ChNyGrT4os71LOm8SR7Xs8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Feb 2021 13:46:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Error: Missing required properties."
+						}
+					]
+				},
+				{
+					"name": "PUT-TEST",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Brand New Colony\",\n    \"album\": 500,\n    \"artist\": \"The Postal Service\",\n    \"genre\": \"Alternative Indie\",\n    \"releaseDate\": 12182003\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/songs/edit/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"songs",
+								"edit",
+								"23"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PUT-TEST-RESPONSE",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Brand New Colony\",\n    \"album\": 500,\n    \"artist\": \"The Postal Service\",\n    \"genre\": \"Alternative Indie\",\n    \"releaseDate\": 12182003\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/songs/edit/23",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"songs",
+										"edit",
+										"23"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-eiwV8ChNyGrT4os71LOm8SR7Xs8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Feb 2021 14:28:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Error: Missing required properties."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "GET REQUEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/songs/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						"get"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET REQUEST DATA",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/songs/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"songs",
+								"get"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3165"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5d-JQvKi2zDWsWyAe6+tWC/6Pl8KoQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Feb 2021 12:36:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"The Servant Leader\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The RockHeads\",\n        \"genre\": \"Country Jazz\",\n        \"releaseDate\": \"08/15/1933\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Drive My Car\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Norwegian Wood\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"You Won't See Me\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Nowhere Man\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Think For Yourself\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"The Word\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Michelle\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"What Goes On\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Girl\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 11,\n        \"title\": \"I'm Looking Through You\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 12,\n        \"title\": \"In My Life\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 13,\n        \"title\": \"Wait\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 14,\n        \"title\": \"If I Needed Someone\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 15,\n        \"title\": \"Run For Your Life\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 16,\n        \"title\": \"The District Sleeps Alone Tonight\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 17,\n        \"title\": \"Such Great Heights\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 18,\n        \"title\": \"Sleeping In\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 19,\n        \"title\": \"Nothing Better\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 20,\n        \"title\": \"Recycled Air\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 21,\n        \"title\": \"Clark Gable\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 22,\n        \"title\": \"We Will Become Silhouettes\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 23,\n        \"title\": \"This Place Is a Prison\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 24,\n        \"title\": \"Brand New Colony\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET SPECIFIC SONG BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/songs/get/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						"get",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET SPECIFIC SONG BY ID DATA",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/songs/get/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"songs",
+								"get",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7f-8ynVKcq1tAXcREyiLDTwVRi3zW8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Feb 2021 12:51:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"title\": \"You Won't See Me\",\n    \"album\": \"Rubber Soul\",\n    \"artist\": \"The Beatles\",\n    \"genre\": \"Folk Rock\",\n    \"releaseDate\": \"12/03/1965\"\n}"
+				}
+			]
+		},
+		{
+			"name": "POST REQUEST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Travel By Mind\",\n    \"album\": \"Phantom Phantasy\",\n    \"artist\": \"OluShoks\",\n    \"genre\": \"N/A\",\n    \"releaseDate\": \"TBA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/songs/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POSST REQUEST DATA",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Travel By Mind\",\n    \"album\": \"Phantom Phantasy\",\n    \"artist\": \"OluShoks\",\n    \"genre\": \"N/A\",\n    \"releaseDate\": \"TBA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/songs/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"songs",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "115"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"73-YMV4aA412ZMn6rIlGdRJFYU/Zpk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Feb 2021 13:04:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 25,\n    \"title\": \"Travel By Mind\",\n    \"album\": \"Phantom Phantasy\",\n    \"artist\": \"OluShoks\",\n    \"genre\": \"N/A\",\n    \"releaseDate\": \"TBA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "PUT REQUEST",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"To Hell With Satan\",\n    \"album\": \"Phantom Phantasy\",\n    \"artist\": \"OluShoks\",\n    \"genre\": \"N/A\",\n    \"releaseDate\": \"02/31/2097\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/songs/edit/25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						"edit",
+						"25"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PUT REQUEST DATA",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"To Hell With Satan\",\n    \"album\": \"Phantom Phantasy\",\n    \"artist\": \"OluShoks\",\n    \"genre\": \"N/A\",\n    \"releaseDate\": \"02/31/2097\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/songs/edit/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"songs",
+								"edit",
+								"25"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"80-HTwW/Tox/mZFKwcoWNVceMc+Zx4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Feb 2021 13:33:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"25\",\n    \"title\": \"To Hell With Satan\",\n    \"album\": \"Phantom Phantasy\",\n    \"artist\": \"OluShoks\",\n    \"genre\": \"N/A\",\n    \"releaseDate\": \"02/31/2097\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE REQUEST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/songs/delete/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"songs",
+						"delete",
+						"16"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE REQUEST DATA",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/songs/delete/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"songs",
+								"delete",
+								"16"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3131"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c3b-KarU3PcRiSKqUMERIlwJukACp2g\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Feb 2021 13:29:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"The Servant Leader\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The RockHeads\",\n        \"genre\": \"Country Jazz\",\n        \"releaseDate\": \"08/15/1933\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Drive My Car\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Norwegian Wood\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"You Won't See Me\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Nowhere Man\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Think For Yourself\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"The Word\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Michelle\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"What Goes On\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Girl\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 11,\n        \"title\": \"I'm Looking Through You\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 12,\n        \"title\": \"In My Life\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 13,\n        \"title\": \"Wait\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 14,\n        \"title\": \"If I Needed Someone\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 15,\n        \"title\": \"Run For Your Life\",\n        \"album\": \"Rubber Soul\",\n        \"artist\": \"The Beatles\",\n        \"genre\": \"Folk Rock\",\n        \"releaseDate\": \"12/03/1965\"\n    },\n    {\n        \"id\": 16,\n        \"title\": \"Such Great Heights\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 17,\n        \"title\": \"Sleeping In\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 18,\n        \"title\": \"Nothing Better\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 19,\n        \"title\": \"Recycled Air\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 20,\n        \"title\": \"Clark Gable\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 21,\n        \"title\": \"We Will Become Silhouettes\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 22,\n        \"title\": \"This Place Is a Prison\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 23,\n        \"title\": \"Brand New Colony\",\n        \"album\": \"Give Up\",\n        \"artist\": \"The Postal Service\",\n        \"genre\": \"Alternative Indie\",\n        \"releaseDate\": \"02/18/2003\"\n    },\n    {\n        \"id\": 24,\n        \"title\": \"Travel By Mind\",\n        \"album\": \"Phantom Phantasy\",\n        \"artist\": \"OluShoks\",\n        \"genre\": \"N/A\",\n        \"releaseDate\": \"02/31/2097\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
