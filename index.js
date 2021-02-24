@@ -1,5 +1,6 @@
 const express = require("express");
 const repoContext = require("./repository/repository-wrapper");
+const { validateNewSong } = require("./middleware/validateSong");
 
 // Initialize express
 const app = express();
@@ -17,7 +18,7 @@ app.get("/", (req, res) => {
   res.send("<h1>Hello World, I am express</h1>");
 });
 
-app.post("/api/songs", (req, res) => {
+app.post("/api/songs", [validateNewSong], (req, res) => {
   const songToAdd = req.body;
   const newSong = repoContext.songs.createSong(songToAdd);
   res.send(newSong);

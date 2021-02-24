@@ -6,5 +6,13 @@
     "artist": "The Beatles",
     "genre": "Folk Rock",
     "releaseDate": "12/03/1965"
+  },
+  {
+    "id": 2,
+    "title": "Norwegian Wood",
+    "album": "Rubber Soul",
+    "artist": "The Beatles",
+    "genre": "Folk Rock",
+    "releaseDate": "12/03/1965"
   }
 ]
