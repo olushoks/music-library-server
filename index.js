@@ -27,10 +27,18 @@ app.post("/api/songs", [validateNewSong], (req, res) => {
   res.send(newSong);
 });
 
-// UPDATE SONGS IN LIBRARY BY ID
+// UPDATE SONGS IN LIBRARY
 app.put("/api/songs/:id", [validateNewSong], (req, res) => {
   const id = req.params.id;
   const songDetailsToUpdate = req.body;
   const updatedSong = repoContext.songs.updateSong(id, songDetailsToUpdate);
   res.send(updatedSong);
+});
+
+// DELETE SONG(S) IN DATABASE
+app.delete("/api/songs/:id", (req, res) => {
+  const id = req.params.id;
+  const songToDelete = req.body;
+  const deletedSong = repoContext.songs.deleteSong(id, songToDelete);
+  res.send(deletedSong);
 });
