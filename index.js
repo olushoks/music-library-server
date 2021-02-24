@@ -20,6 +20,13 @@ app.get("/api/songs", (req, res) => {
   res.send(songs);
 });
 
+// REQUEST SPECIFIIC SONG IN DATABASE
+app.get("/api/songs/:id", (req, res) => {
+  const id = req.params.id;
+  const song = repoContext.songs.findSongById(id);
+  res.send(song);
+});
+
 // ADD NEW SONGS TO DATABASE
 app.post("/api/songs", [validateNewSong], (req, res) => {
   const songToAdd = req.body;
