@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server started on PORT ${PORT}`));
 
 // REQUEST ALL SONGS IN DATABASE
-app.get("/api/songs", (req, res) => {
+app.get("/api/songs/get", (req, res) => {
   const songs = repoContext.songs.findAllSongs();
   res.send(songs);
 });
