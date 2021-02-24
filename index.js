@@ -28,7 +28,7 @@ app.get("/api/songs/get/:id", (req, res) => {
 });
 
 // ADD NEW SONGS TO DATABASE
-app.post("/api/songs", [validateNewSong], (req, res) => {
+app.post("/api/songs/add", [validateNewSong], (req, res) => {
   const songToAdd = req.body;
   const newSong = repoContext.songs.createSong(songToAdd);
   res.send(newSong);

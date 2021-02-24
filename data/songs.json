@@ -190,5 +190,13 @@
     "artist": "The Postal Service",
     "genre": "Alternative Indie",
     "releaseDate": "02/18/2003"
+  },
+  {
+    "id": 25,
+    "title": "Travel By Mind",
+    "album": "Phantom Phantasy",
+    "artist": "OluShoks",
+    "genre": "N/A",
+    "releaseDate": "TBA"
   }
 ]
