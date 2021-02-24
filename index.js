@@ -1,11 +1,13 @@
 const express = require("express");
 const repoContext = require("./repository/repository-wrapper");
+const cors = require("cors");
 const { validateNewSong } = require("./middleware/validateSong");
 
 // Initialize express
 const app = express();
 
 // Initialize Miiddleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
