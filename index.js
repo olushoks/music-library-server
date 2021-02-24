@@ -43,7 +43,7 @@ app.put("/api/songs/edit/:id", [validateNewSong], (req, res) => {
 });
 
 // DELETE SONG(S) IN DATABASE
-app.delete("/api/songs/:id", (req, res) => {
+app.delete("/api/songs/delete/:id", (req, res) => {
   const id = req.params.id;
   const songToDelete = req.body;
   const deletedSong = repoContext.songs.deleteSong(id, songToDelete);
