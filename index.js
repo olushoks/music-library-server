@@ -35,7 +35,7 @@ app.post("/api/songs/add", [validateNewSong], (req, res) => {
 });
 
 // UPDATE SONGS IN LIBRARY
-app.put("/api/songs/:id", [validateNewSong], (req, res) => {
+app.put("/api/songs/edit/:id", [validateNewSong], (req, res) => {
   const id = req.params.id;
   const songDetailsToUpdate = req.body;
   const updatedSong = repoContext.songs.updateSong(id, songDetailsToUpdate);
