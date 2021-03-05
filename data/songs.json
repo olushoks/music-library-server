@@ -2,10 +2,10 @@
   {
     "id": 1,
     "title": "The Servant Leader",
-    "album": "Rubber Soul",
-    "artist": "The RockHeads",
-    "genre": "Country Jazz",
-    "releaseDate": "08/15/1933"
+    "album": "In Him Was Life",
+    "artist": "OluShoks",
+    "genre": "N/A",
+    "releaseDate": "Unknown"
   },
   {
     "id": 2,
@@ -145,14 +145,6 @@
   },
   {
     "id": 19,
-    "title": "Recycled Air",
-    "album": "Give Up",
-    "artist": "The Postal Service",
-    "genre": "Alternative Indie",
-    "releaseDate": "02/18/2003"
-  },
-  {
-    "id": 20,
     "title": "Clark Gable",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -160,7 +152,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 21,
+    "id": 20,
     "title": "We Will Become Silhouettes",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -168,15 +160,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 22,
-    "title": "This Place Is a Prison",
-    "album": "Give Up",
-    "artist": "The Postal Service",
-    "genre": "Alternative Indie",
-    "releaseDate": "02/18/2003"
-  },
-  {
-    "id": 23,
+    "id": 21,
     "title": "Brand New Colony",
     "album": "Give Up",
     "artist": "The Postal Service",
@@ -184,7 +168,7 @@
     "releaseDate": "02/18/2003"
   },
   {
-    "id": 24,
+    "id": 22,
     "title": "Travel By Mind",
     "album": "Phantom Phantasy",
     "artist": "OluShoks",
@@ -192,11 +176,83 @@
     "releaseDate": "02/31/2097"
   },
   {
-    "id": "25",
+    "id": 23,
     "title": "To Hell With Satan",
     "album": "Phantom Phantasy",
     "artist": "OluShoks",
     "genre": "N/A",
     "releaseDate": "02/31/2097"
+  },
+  {
+    "id": 24,
+    "title": "The Bird Who Lived in The Sea",
+    "album": "Phantom Phantasy",
+    "artist": "OluShoks",
+    "genre": "N/A",
+    "releaseDate": "09/35/2099"
+  },
+  {
+    "id": 25,
+    "title": "Pre-Life Biography",
+    "album": "Phantom Phantasy",
+    "artist": "OluShoks",
+    "genre": "N/A",
+    "releaseDate": "07/01/2199"
+  },
+  {
+    "id": 26,
+    "title": "Infinito Limitado",
+    "album": "Phantom Phantasy",
+    "artist": "OluShoks",
+    "genre": "Noctuurnal",
+    "releaseDate": "07/25/1923"
+  },
+  {
+    "id": 27,
+    "title": "Ecce Homo",
+    "album": "In Him Was Life",
+    "artist": "OluShoks",
+    "genre": "Nocturnal",
+    "releaseDate": "04/35/1822"
+  },
+  {
+    "id": 28,
+    "title": "Of Giants And Giantress",
+    "album": "Phantom Phantasy",
+    "artist": "OluShoks",
+    "genre": "Nocturnal",
+    "releaseDate": "12/22/2255"
+  },
+  {
+    "id": 29,
+    "title": "Be Naked",
+    "album": "Transluscence",
+    "artist": "OluShoks",
+    "genre": "Nocturnal",
+    "releaseDate": "12/03/2020"
+  },
+  {
+    "id": 30,
+    "title": "Ask For Help",
+    "album": "In Him Was Life",
+    "artist": "OluShoks",
+    "genre": "Universal",
+    "releaseDate": "08/09/2029"
+  },
+  {
+    "id": 31,
+    "title": "We Are All Red",
+    "album": "One Humanity",
+    "artist": "OluShoks",
+    "genre": "Nocturnal",
+    "releaseDate": "10/01/2058"
+  },
+  {
+    "id": "32",
+    "title": "Anniversary",
+    "album": "The Remembrance",
+    "artist": "OluShoks",
+    "genre": "Nocturnal",
+    "releaseDate": "08/15/1504"
   }
 ]
