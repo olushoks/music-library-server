@@ -1,2 +1,3 @@
 # music-library-server
-Back-End API Server using Node.js and Express.js
+
+#### Kindly navigate to Music-Library repository here: https://github.com/olushoks/Music-Library as both the Front-end and Back-end have been merged into a single repository
